@@ -1,0 +1,157 @@
+* {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  grid-area: header;
+
+  text-align: center;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header img {
+  width: 100px;
+}
+.aside {
+  grid-area: aside;
+  background-color: rgb(249, 249, 249);
+  padding: 24px 16px;
+  margin: 16px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+.content {
+  grid-area: content;
+}
+.footer {
+  grid-area: footer;
+  background-color: rgb(12, 12, 12);
+  color: #fff;
+  text-align: center;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template:
+    "header header "
+    "aside content"
+    "footer footer ";
+  grid-template-columns: 1fr 4fr;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+.text-gray {
+  color: #7a7a7a;
+}
+
+/* productos */
+.card {
+  -webkit-box-shadow: 0px 2px 22px -6px rgb(195, 195, 195);
+  -moz-box-shadow: 0px 2px 22px -6px rgba(195, 195, 195, 1);
+  box-shadow: 0px 2px 22px -6px rgba(195, 195, 195, 1);
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+.card-header img {
+  max-width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.card-body {
+  padding: 16px;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-body h6 {
+  font-size: 16px;
+}
+
+.card-body span {
+  font-size: 24px;
+  color: #ffd000;
+  font-weight: bolder;
+}
+.card-footer {
+  padding: 0px 0px 16px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-footer button {
+  background-color: red;
+  padding: 8px 32px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.card-footer button:hover {
+  background-color: rgb(125, 0, 0);
+}
+/* / */
+
+/* menu */
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+ul li {
+  list-style: none;
+}
+ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: 16px 8px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.active,
+.active:hover {
+  background-color: #ffd000;
+}
+
+ul li a:hover {
+  background-color: #f0f0f0;
+  color: black;
+}
+/* / */
